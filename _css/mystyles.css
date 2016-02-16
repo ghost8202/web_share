@@ -1,0 +1,10 @@
+
+.ui-block-a{background: teal;}
+.ui-block-b{background: bisque;}
+.ui-block-c{background: salmon;}
+
+.ui-icon-sheridan:after
+{
+	background-image: url("sheridan.png");
+	background-size: 22px, 22px;
+}

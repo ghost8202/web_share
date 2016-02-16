@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>jQuery Mobile - In Class</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+	<link rel="stylesheet" href="_css/jquery.mobile.css" />
+	<link rel="stylesheet" href="_css/mystyles.css" />
+	
+	<script src="_js/jquery.js"></script>
+	<script src="_js/jquery.mobile.js"></script>
+	<script src="_js/myscript.js"></script>
+</head>
+<body>
+<div data-role = "page" id="inclass" data-theme="a">
+
+<header data-role="header">
+<h1>Chris Hall / 991 290 303</h1>
+</header>
+<section class="ui-content" role="main">
+<ul data-role="listview" data-inset="true" data-filter="true">
+<li>
+<a href="#inclass02" data-transition="slidedown">
+slide to FirstA</a>
+</li>
+<li>
+<a href="#inclass02" data-transition="flow">
+flow to FirstA</a>
+</li>
+<li>
+<a href="#inclass02" data-transition="turn">
+turn to FirstA</a>
+</li>
+<li>
+<a href="#inclass02" data-transition="pop">
+pop to FirstA</a>
+</li>
+<li>
+<a href="#inclass02" data-transition="flip">
+flip to FirstA</a>
+</li>
+<li>
+<a href="#inclass02" data-transition="slidefade">
+slide fade to FirstA</a>
+</li>
+</ul>
+</section>
+<footer data-role="footer">
+<h5>Footer Stuff</h5>
+</footer>
+</div> <!-- end of inclass page-->
+
+
+	<div data-role="page" id="inclass02" data-theme="a">
+		<header data-role="header">
+		<!-- add a back button-->
+		<a href="#inclass" class="ui-btn ui-icon-back ui-btn-icon-notext" data-transition="flow">
+		Home</a>
+			<h5 class="ui-title">Chris Hall</h5>
+		</header>
+		
+		<section class="ui-content" role="main">
+		<section class="ui-grid-a"> <!-- open grid a-->
+		<div class="ui-block-a">
+		<section data-role="collapsible" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-u">
+		<!-- for collapsible.. need header and para-->
+		<h1>P head</h1>
+		<p>Some stuff<br> More stuff</p>
+		</section>
+		</div>
+		<div class="ui-block-b">
+		<ul><li>AA</li><li>BB</li></ul>
+		</div>
+		</section>	<!-- closes grid a-->
+				<section class="ui-grid-b"> <!-- open grid a-->
+		<div class="ui-block-a">
+		<button class="ui-btn">Text Only</button>
+		<button class="ui-btn ui-icon-mail ui-btn-icon-top">You have mail - text with an icon</button>
+		<button class="ui-btn ui-icon-phone ui-btn-icon-notext">Icon only</button>
+		</div>
+		<div class="ui-block-b">
+		<div data-role="controlgroup" data-type="horizontal">
+		<button class="ui-btn ui-icon-phone ui-btn-icon-notext">Icon only</button>
+		<button class="ui-btn ui-icon-mail ui-btn-icon-notext">Icon only</button>
+		<button class="ui-btn ui-icon-eye ui-btn-icon-notext">Icon only</button>
+		</div>
+		</div>
+		<div class="ui-block-c">
+		<p>Tooltip popup
+		<a href="#popupInfo" data-rel="popup" class="ui-btn ui-icon-sheridan ui-btn-icon-notext">
+		</a></p>
+		<div id="popupInfo" data-rol="popup">
+		<a href="http://sheridancollege.ca" target="_blank">Sheridan</a>
+		<img src="images/sheridan.png">
+		</div>
+		</div>
+		</section>	<!-- closes grid a-->
+		</section>
+			
+		<footer data-role="footer">
+<nav data-role="navbar">
+<ul>
+<li>
+<a href="#inclass" class="ui-btn ui-icon-back ui-btn-icon-bottom" data-transition="flow">
+		Home</a>
+</li>
+<li>
+<a href="http://sheridancollege.ca" class="ui-btn ui-icon-heart ui-btn-icon-bottom" data-transition="flow">
+		Sheridan</a>
+</li>
+<li>
+<a href="http://jquerymobile.com" class="ui-btn ui-icon-eye ui-btn-icon-bottom" data-transition="flow">
+		Home</a>
+</li>
+</ul>
+</nav>
+		</footer>
+	</div>
+	
+</body>
+</html>
